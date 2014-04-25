@@ -6,7 +6,7 @@
 ## and its inverse.
 
 makeCacheMatrix <- function(mtx = matrix()) {
-	    invmtx <- NULL
+        invmtx <- NULL
         set <- function(y) {
                 mtx <<- y
                 invmtx <<- NULL
@@ -15,7 +15,7 @@ makeCacheMatrix <- function(mtx = matrix()) {
         setInverseMatrix <- function(inverseMatrix) invmtx <<- inverseMatrix
         getInverseMatrix <- function() invmtx
         list(set = set, 
-        	 get = get,
+             get = get,
              setInverseMatrix = setInverseMatrix,
              getInverseMatrix = getInverseMatrix)
 
